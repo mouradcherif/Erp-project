@@ -1,26 +1,5 @@
 <?php
 
-/*
- * Copyright (c) 2018 Barchampas Gerasimos <makindosx@gmail.com>
- * online-banking a online banking system for local businesses.
- *
- * online-banking is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License as
- * published by the Free Software Foundation, either version 3 of the
- * License, or (at your option) any later version.
- *
- *
- * online-banking is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU Affero General Public License for more details.
- *
- * You should have received a copy of the GNU Affero General Public License, version 3,
- * along with this program.  If not, see <http://www.gnu.org/licenses/>
- *
- */
-
-
  session_start();
 
   
@@ -30,7 +9,7 @@
       }
 
 
-$idletime=898;//after 60 seconds the user gets logged out
+$idletime=898;
 
 if (time()-$_SESSION['timestamp']>$idletime)
    {
@@ -384,10 +363,6 @@ require_once('__SRC__/connect.php');
              else
                {
 
- //echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>';
- //echo '<div id="div1">';
-
-
 
   echo "<div class='wrapper'>";
 
@@ -729,7 +704,7 @@ $("input[type=password]").keyup(function(){
     </div>";
 
 
-  }// end of while
+  }
 
 
    echo "</div> </div>";
@@ -737,13 +712,13 @@ $("input[type=password]").keyup(function(){
 
 
 
-  //echo '</div>';
+ 
 
 
-  } // end of else connect
+  }
 
 
- } // end of connect class exist
+ } 
 
 
 
@@ -764,7 +739,7 @@ $("input[type=password]").keyup(function(){
     <script>
   var $cell = $('.card');
 
-//open and close card when clicked on card
+
 $cell.find('.js-expander').click(function() {
 
   var $thisCell = $(this).closest('.card');
@@ -785,7 +760,7 @@ $cell.find('.js-expander').click(function() {
   }
 });
 
-//close card when click on cross
+
 $cell.find('.js-collapser').click(function() {
 
   var $thisCell = $(this).closest('.card');
